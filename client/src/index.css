@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Schibsted Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #f6f7f9;
+  --color-ink: #1c2433;
+  --color-slate: #6b7385;
+  --color-line: #dfe3ea;
+  --color-cobalt: #2f5bea;
+  --color-cobalt-dark: #2448c4;
+  --color-cobalt-soft: #e7edff;
+  --color-sticky: #ffd84d;
+  --color-danger: #c62f3f;
+  --shadow-float: 0 1px 2px rgb(28 36 51 / 0.06), 0 8px 24px -6px rgb(28 36 51 / 0.16);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* One focus style everywhere; visible on keyboard, quiet on mouse. */
+:focus-visible {
+  outline: 2px solid var(--color-cobalt);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.dot-grid {
+  background-color: var(--color-paper);
+  background-image: radial-gradient(rgb(28 36 51 / 0.16) 1px, transparent 1px);
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  z-index: 100;
+  padding: 8px 12px;
+  background: var(--color-ink);
+  color: white;
+  border-radius: 6px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
