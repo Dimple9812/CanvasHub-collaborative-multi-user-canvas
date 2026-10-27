@@ -2,7 +2,7 @@
 
 A shared whiteboard where several people draw, write sticky notes and move things around **at the same time**, see each other's cursors live, and keep working **offline** — changes merge automatically when they reconnect.
 
-**Live demo:** _coming soon_ · click **“Try a board — no sign-up”**, then **Share → Copy link** and open it in a second tab or on your phone.
+**Live demo:** [canvashub-gold.vercel.app](https://canvashub-gold.vercel.app) · click **“Try a board — no sign-up”**, then **Share → Copy link** and open it in a second tab or on your phone.
 
 > The API runs on a free host that sleeps when idle, so the first visit can take up to a minute to wake it. The page shows a progress message while that happens.
 
