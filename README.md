@@ -102,7 +102,7 @@ cd client && npm install && npm run dev        # http://localhost:5173
 ## Deploy
 
 - **API → Render:** `render.yaml` is a Blueprint (root `server/`, health check `/api/health`). Set `MONGODB_URI` (MongoDB Atlas) and `CLIENT_ORIGIN` (your Vercel URL) in the dashboard; `JWT_SECRET` is generated.
-- **Web app → Vercel:** root `client/`. `client/vercel.json` rewrites `/api/*` to the Render URL and falls back to `index.html`. Set `VITE_SOCKET_URL` to the Render URL.
+- **Web app → Vercel:** root `client/`. `client/vercel.json` rewrites `/api/*` to the Render URL and falls back to `index.html`. Set `VITE_SOCKET_URL` to the Render URL (here `https://canvashub-api.onrender.com`).
 
 ## Known limitations
 
